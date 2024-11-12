@@ -40,7 +40,7 @@ public class SummaryService {
                         ))
                         .build());
 
-        return response.getGenerations().get(0).getText();
+        return response.getMessage();
     }
 }
 
