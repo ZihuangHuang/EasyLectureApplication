@@ -40,7 +40,7 @@ public class SummaryService {
                         ))
                         .build());
 
-        return response.getMessage();
+        return String.valueOf(response.getMessage());
     }
 }
 
