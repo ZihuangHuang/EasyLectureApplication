@@ -19,12 +19,11 @@ public class SummaryService {
      * Generates a summary of the given transcription using the Cohere API.
      *
      * @param transcription The lecture transcription text.
-     * @param apiKey        The API key for Cohere.
      * @return The generated summary.
      */
-    public static String generateSummary(String transcription, String apiKey) {
+    public static String generateSummary(String transcription) {
         Cohere cohere = Cohere.builder()
-                .token(apiKey)
+                .token("jwgBCFFlmTYQiX6B3jhukmHwq1HDEwNRabSUvY9Z")
                 .clientName("LectureSummaryGenerator")
                 .build();
 
