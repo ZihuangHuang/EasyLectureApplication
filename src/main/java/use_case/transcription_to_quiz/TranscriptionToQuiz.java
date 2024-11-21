@@ -1,4 +1,4 @@
-package use_case;
+package use_case.transcription_to_quiz;
 
 import com.cohere.api.Cohere;
 import com.cohere.api.resources.v2.requests.V2ChatRequest;
@@ -6,11 +6,9 @@ import com.cohere.api.types.ChatMessageV2;
 import com.cohere.api.types.ChatResponse;
 import com.cohere.api.types.UserMessage;
 import com.cohere.api.types.UserMessageContent;
+import use_case.TranscriptionReader;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.List;
 import java.util.Random;
 
 
