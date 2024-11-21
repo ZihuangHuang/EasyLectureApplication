@@ -1,4 +1,4 @@
-package chatv2post;
+package use_case.transcription_to_quiz;
 
 import com.cohere.api.Cohere;
 import com.cohere.api.resources.v2.requests.V2ChatRequest;
