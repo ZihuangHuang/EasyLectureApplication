@@ -1,4 +1,4 @@
-package use_case;
+package use_case.transcription_to_quiz;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
