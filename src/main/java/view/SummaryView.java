@@ -27,5 +27,62 @@ public class SummaryView extends JPanel implements ActionListener, PropertyChang
     private SummaryController summaryController;
     private JFrame frame;
     private JTextArea summarytextArea;
+    private JButton generateButton;
 
+    /**
+     * Constructs a SummaryView with the given ViewModel and Controller.
+     *
+     * @param viewModel     The ViewModel to observe.
+     */
+    public SummaryView(SummaryViewModel viewModel) {
+        this.viewModel = viewModel;
+        this.viewModel.addPropertyChangeListener(this);
+        initialize();
+    }
+
+    /**
+     * Initializes the GUI components.
+     */
+    private void initialize() {
+        frame = new JFrame("Lecture Summary");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600,400);
+        frame.setLocationRelativeTo(null);
+        JPanel panel = new JPanel(new BorderLayout());
+        summarytextArea = new JTextArea();
+        summarytextArea.setEditable(false);
+        summarytextArea.setLineWrap(true);
+        summarytextArea.setWrapStyleWord(true);
+        JScrollPane scrollPane = new JScrollPane(summarytextArea);
+        generateButton = new JButton("Generate Quiz");
+        generateButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                generateQuiz();
+            }
+        });
+        panel.add(scrollPane, BorderLayout.CENTER);
+        panel.add(generateButton, BorderLayout.SOUTH);
+        frame.getContentPane().add(panel, BorderLayout.CENTER);
+        frame.setVisible(true);
+    }
+    private void generateQuiz() {
+        //Done by Eric
+    }
+
+    /**
+     * Handles property change events from the ViewModel.
+     *
+     * @param evt The property change event.
+     */
+    public void propertyChange(PropertyChangeEvent evt) {
+        if ("summaryText".equals(evt.getPropertyName())) {
+            summarytextArea.setText((String)evt.getNewValue());
+        }
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        generateQuiz();
+
+    }
 }

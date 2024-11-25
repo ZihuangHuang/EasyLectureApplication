@@ -7,13 +7,14 @@ import entity.Summary;
  * The summary service interactor.
  */
 public class SummaryServiceInteractor implements SummaryServiceInputBoundary {
-    private final SummaryServiceUserDataAccessInterface summaryDataAccessObject;
-    private final SummaryServiceOutputBoundary summaryPresenter;
+    private final SummaryServiceUserDataAccessInterface summaryDataAccessInterface;
+    private final SummaryServiceOutputBoundary summaryOutputBoundary;
 
-    public SummaryServiceInteractor(SummaryServiceUserDataAccessInterface summaryDataAccessObject,
-                                    SummaryServiceOutputBoundary summaryPresenter) {
-        this.summaryDataAccessObject = summaryDataAccessObject;
-        this.summaryPresenter = summaryPresenter;
+    public SummaryServiceInteractor(SummaryServiceUserDataAccessInterface summaryDataAccessInterface,
+                                    SummaryServiceOutputBoundary summaryOutputBoundary) {
+        this.summaryDataAccessInterface = summaryDataAccessInterface;
+        this.summaryOutputBoundary = summaryOutputBoundary;
+
 
     }
 
@@ -22,7 +23,7 @@ public class SummaryServiceInteractor implements SummaryServiceInputBoundary {
         try {
             // Assuming we have a way to get the lecture URL or create a Lecture object, should be done by Huy.
             Lecture lecture = new Lecture(null, summaryServiceInputData.getTranscript());
-            Summary summary = summaryDataAccessObject.getSummary(lecture);
+            Summary summary = summaryDataAccessInterface.getSummary(lecture);
 
             SummaryServiceOutputData outputData = new SummaryServiceOutputData(
                     summary.getSummaryText(),
@@ -30,10 +31,10 @@ public class SummaryServiceInteractor implements SummaryServiceInputBoundary {
                     false // No errors
             );
 
-            summaryPresenter.prepareSuccessView(outputData);
+            summaryOutputBoundary.prepareSuccessView(outputData);
         } catch (Exception e) {
             e.printStackTrace();
-            summaryPresenter.prepareFailView("An error occurred while generating the summary.");
+            summaryOutputBoundary.prepareFailView("An error occurred while generating the summary.");
         }
     }
 }
