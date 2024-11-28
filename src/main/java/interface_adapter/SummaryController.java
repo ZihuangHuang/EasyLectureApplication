@@ -7,6 +7,9 @@ import use_case.SummaryServiceInputData;
  * Controller class that handles user input for lecture summarization.
  */
 public class SummaryController {
+    /**
+     * The SummaryController.
+     */
     private final SummaryServiceInputBoundary summaryServiceUseCaseInteractor;
 
     public SummaryController(SummaryServiceInputBoundary summaryServiceUseCaseInteractor) {

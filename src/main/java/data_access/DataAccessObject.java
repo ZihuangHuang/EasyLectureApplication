@@ -14,7 +14,8 @@ public class DataAccessObject implements SummaryServiceUserDataAccessInterface {
     /**
      * Constructs a MockSummaryDAO.
      *
-     * @param shouldThrowException Determines if the DAO should throw an exception.
+     * @param shouldThrowException Determines if the DAO
+     *                             should throw an exception.
      */
     public DataAccessObject(boolean shouldThrowException) {
         this.shouldThrowException = shouldThrowException;

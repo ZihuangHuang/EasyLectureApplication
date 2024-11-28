@@ -10,6 +10,7 @@ public class SummaryServiceInteractor implements SummaryServiceInputBoundary {
     private final SummaryServiceUserDataAccessInterface summaryDataAccessInterface;
     private final SummaryServiceOutputBoundary summaryOutputBoundary;
 
+
     public SummaryServiceInteractor(SummaryServiceUserDataAccessInterface summaryDataAccessInterface,
                                     SummaryServiceOutputBoundary summaryOutputBoundary) {
         this.summaryDataAccessInterface = summaryDataAccessInterface;
@@ -28,7 +29,7 @@ public class SummaryServiceInteractor implements SummaryServiceInputBoundary {
             SummaryServiceOutputData outputData = new SummaryServiceOutputData(
                     summary.getSummaryText(),
                     summary.getTopics(),
-                    false // No errors
+                    false
             );
 
             summaryOutputBoundary.prepareSuccessView(outputData);

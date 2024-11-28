@@ -11,7 +11,7 @@ public class SummaryViewModel {
     private final PropertyChangeSupport support;
     private List<String> topics;
 
-    public SummaryViewModel(){
+    public SummaryViewModel() {
         this.support = new PropertyChangeSupport(this);
     }
 
