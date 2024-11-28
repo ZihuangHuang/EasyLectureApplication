@@ -26,7 +26,18 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 
 ***
 ## 🌟 Features
+- Automatic Transcription Retrieval: Input a YouTube lecture URL, and the program fetches the lecture's transcription.
+- Summarization: Generates concise summaries of lectures using advanced language models.
+- Quiz Generation: Creates quizzes based on the lecture summaries to test comprehension.
+- User-Friendly Interface: Simple and intuitive GUI built with Java Swing.
+- Shareable Content: Summaries and quizzes can be shared with other students or educators.
+- Customization: Adjust the depth of summaries and difficulty of quizzes (future enhancement).
 
+Below are some visuals of our features!
+![3751732835699_ pic](https://github.com/user-attachments/assets/a4ea09ac-5baf-4cae-a59c-d6ec6cf3fc00)
+![3761732835700_ pic](https://github.com/user-attachments/assets/7d77bdef-79b0-433a-8b4b-71733edf42df)
+***
+## ⬇️ Installation
 
 
 Team Members:
