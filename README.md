@@ -19,7 +19,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 
 - [Features of the software](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#-features)
 - [Installation Instructions](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#%EF%B8%8F-installation)
-- [Usage Guide]
+- [Usage Guide](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#-usage)
 - [License about Usage]
 - [Feedback]
 - [How to Contribute to this Software?]
@@ -89,7 +89,27 @@ gradle build
 ***
 
 ## 🚀 Usage
+Once the application is running, follow these steps to use software.
+1. Enter a YouTube Lecture URL
 
+   - In the input field labeled "YouTube Lecture URL", paste the URL of the lecture you wish to summarize.
+   - Example:
+   ```bash
+    (https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+   ```
+
+2. Summarize the lecture
+- Click the "Generate Summary" button.
+- Wait for the application to fetch the transcription and generate the summary.
+- The summary will be displayed in the "Lecture Summary" user interface.
+
+3. Generate a quiz
+- After the summary is displayed, click the "Generate Quiz" button.
+- The application will create a quiz based on the summary.
+- The quiz questions will appear in the "Quiz" section.
+***
+## 📋 License
+This application is licensed under the MIT License.
 
 Team Members:
 
