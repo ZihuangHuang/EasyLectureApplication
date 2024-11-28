@@ -1,5 +1,20 @@
 # EasyLectureApplication
-# CSC207 Group Project
+## CSC207 Group Project
+## ℹ️ Overview
+
+This EasyLectureApp is a Java-based application designed to help students and educators efficiently digest lecture content from YouTube videos. By automatically extracting transcriptions from YouTube lectures, the program generates concise summaries and creates quizzes based on the summarized content. This tool enhances learning by providing easy-to-understand summaries and interactive quizzes that can be shared with peers or used for self-assessment.
+
+
+### ✍️ Authors
+- __Huy Xuan Dang__
+- __Zihuang Huang__
+- __Nguyen Nam Anh Tran__
+- __Eric Zhang__
+
+## Table of Contents
+
+- [Project Summary]
+
 Team Members:
 
 Zihuang Huang, ZihuangHuang User story: As a student replies on visual aids for better understanding, I need a tool that specifically focuses on presentation and accessibility of information.So I want the program to highlight key concepts within the transcription and summarize the contents in bullet form as a way to help me jot down the notes in case I miss any important info.
