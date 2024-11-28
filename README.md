@@ -13,7 +13,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 
 ## Table of Contents
 
-- [Project Summary]
+- [Project Summary](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#ℹ%EF%B8%8F-overview)
 
 Team Members:
 
