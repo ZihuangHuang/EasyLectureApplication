@@ -25,6 +25,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 - [How to Contribute to this Software?]
 
 ***
+## 🌟 Features
 
 
 
