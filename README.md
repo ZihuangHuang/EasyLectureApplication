@@ -18,7 +18,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 - Authors--you are here!
 
 - [Features of the software](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#-features)
-- [Installation Instructions]
+- [Installation Instructions](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#%EF%B8%8F-installation)
 - [Usage Guide]
 - [License about Usage]
 - [Feedback]
@@ -38,6 +38,57 @@ Below are some visuals of our features!
 ![3761732835700_ pic](https://github.com/user-attachments/assets/7d77bdef-79b0-433a-8b4b-71733edf42df)
 ***
 ## ⬇️ Installation
+If you are instrested in using the application, follow these steps to install and run the Lecture Summarizer and Quiz Generator on your system.
+### Prerequisites before using the app
+- Operating System: Windows, macOS, or Linux
+- Java Development Kit (JDK): Version 11 or higher
+- Gradle: Version 6.0 or higher (optional, for building the project)
+- Internet Connection: Required for fetching transcriptions and using the Cohere API
+- Cohere API Key: Sign up at Cohere Platform to obtain an API key
+
+### Required Libraries and Dependencies
+
+- Cohere Java SDK: For language processing
+- OkHttp: HTTP client for network requests
+- Jackson Databind: For JSON processing
+- JUnit Jupiter: For running tests
+
+### Installation Steps
+1. Open your terminal and run the command:
+```bash
+git clone https://github.com/yourusername/EasyLectureApplication.git
+```
+2. Navigate to the project directory:
+```bash
+cd EasyLectureApplication
+```
+3. Set up your Cohere API key:
+- Obtain your API key from Cohere Platform.
+- Create a file named config.properties in the src/main/resources directory.
+- Add the following line to the file
+```vbnet
+cohere.api.key=YOUR_COHERE_API_KEY
+```
+4. Build the project using wrapper
+```bash
+./gradlew build
+```
+or using local Gradle installation
+```bash
+gradle build
+```
+5. Run the command to use
+```bash
+./gradlew run
+```
+
+### Common Issues and Solutions
+- Gradle Not Found Error: Ensure that you have Gradle installed or use the Gradle wrapper (gradlew).
+- Invalid API Key Error: Double-check that your Cohere API key is correct and placed in the config.properties file.
+- Network Issues: Ensure that you have a stable internet connection.
+***
+
+## 🚀 Usage
 
 
 Team Members:
