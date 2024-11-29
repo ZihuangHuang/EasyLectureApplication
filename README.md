@@ -20,9 +20,8 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 - [Features of the software](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#-features)
 - [Installation Instructions](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#%EF%B8%8F-installation)
 - [Usage Guide](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#-usage)
-- [License about Usage]
-- [Feedback]
-- [How to Contribute to this Software?]
+- [License about Usage](https://github.com/ZihuangHuang/EasyLectureApplication#-license)
+- [Feedback and Contributing](https://github.com/ZihuangHuang/EasyLectureApplication/edit/main/README.md#-feedback-and-contributing)
 
 ***
 ## 🌟 Features
@@ -135,16 +134,29 @@ SOFTWARE.
 ```
 ***
 ## 💭 Feedback and Contributing
-Team Members:
+Thanks for reading to this point! We as a team greatly value your feedback! To provide feedback on the EasyLectureApplication, please follow these steps:
 
-Zihuang Huang, ZihuangHuang User story: As a student replies on visual aids for better understanding, I need a tool that specifically focuses on presentation and accessibility of information.So I want the program to highlight key concepts within the transcription and summarize the contents in bullet form as a way to help me jot down the notes in case I miss any important info.
+- Submit Feedback via Google Forms:
+   - Access the feedback form [here](https://docs.google.com/forms/d/1HXSokz-nm3lcJS2lld5WG_Lf99iJXazquqNv4RVzpfs/edit).
+   - Provide detailed information about your experience, including any issues you encountered during usage or suggestions for future improvements.
+   - Please be respectful and constructive in your feedback, please write at lest 3 sentences as a paragraph.
+- Feedback Guidelines:
+  - Valid feedback includes, but not limited to, bug reports, feature requests, usability issues, and general suggestions.📢❗🚨
+  - Response Time: We aim to review and respond to feedback within two weeks.💪
 
-Huy Dang, huyxdang User story: As a student, I want the ability to quickly get the main ideas of a lecture before actually diving into it, as well as rapid assessment and feedback on my understanding by quizzes based on the lecture content.
-Proposed edit: As a student who’s first language is not English, I struggle when listening to lectures and online videos. Thus, I want a program that is able to transcribe my videos into a written script so that I can read and understand the content better.
+We welcome the contributions from large community! If you are interested in becoming a contributor of our program, please click the "Fork" button on the top-right corner of the GitHub repository page, then clone your fork to make a local repo and create a new branch for each contributors. When making changes, please make sure to either implement your new functionality or fix a bug, write tests to ensure existing version works, and last but not least, follow the project's coding conventions!🤓 Always remember to git add commit and push, then Go to the original repository on GitHub, click on "Pull Requests" and then "New Pull Request", there you can provide a clear description of your changes.
 
-Eric Zhang, happycompsci User story: As a student who learns best by testing myself, I want a program that can transform content from my recorded lectures and content videos into quizzes that I can use to test my knowledge. Since I study best with multiple choice quizzes, I want my program to be able to generate as many questions as I need based on a single lecture video.
-
-Ken Tran, kensington21 User story:  As a student who loves to study in groups, I want to create quizzes that I can hand out to everyone based on each lecture that we attend. I am looking for a program that can generate quiz questions based on a recorded lecture or content video, which I can then use to help my study group.
-
-
-Team User Story: As a student, I want the ability to quickly get the main ideas of a lecture before actually diving into it, as well as rapid assessment and feedback on my understanding by quizzes based on the lecture content.
+### Contribution Guidelines
+Good Pull Requests:
+- Are focused on a single feature or fix.
+- Include descriptive commit messages.
+- Have been tested thoroughly.
+- Follow the project's style guidelines.
+  
+Review Process:
+- Contributions will be reviewed by the maintainers.
+- Feedback may be provided for required changes.
+- Approved contributions will be merged into the main branch.
+***
+## Again, contributions Are Welcome!
+If you have any questions about contributing, feel free to open an issue or contact us at zihuang.huang@example.com.
