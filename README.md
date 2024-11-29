@@ -18,7 +18,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 - Authors--you are here!
 
 - [Features of the software](https://github.com/ZihuangHuang/EasyLectureApplication?tab=readme-ov-file#-features)
-- [Installation Instructions](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#%EF%B8%8F-installation)
+- [Installation Instructions](https://github.com/ZihuangHuang/EasyLectureApplication?tab=readme-ov-file#%EF%B8%8F-installation)
 - [Usage Guide](https://github.com/ZihuangHuang/EasyLectureApplication/blob/main/README.md#-usage)
 - [License about Usage](https://github.com/ZihuangHuang/EasyLectureApplication#-license)
 - [Feedback and Contributing](https://github.com/ZihuangHuang/EasyLectureApplication/edit/main/README.md#-feedback-and-contributing)
