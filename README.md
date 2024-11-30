@@ -6,7 +6,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 
 
 ### ✍️ Authors
-- __Huy Xuan Dang__
+- __Huy Dang__
 - __Zihuang Huang__
 - __Nguyen Nam Anh Tran__
 - __Eric Zhang__
