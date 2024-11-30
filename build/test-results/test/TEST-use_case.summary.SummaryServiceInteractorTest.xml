@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="use_case.summary.SummaryServiceInteractorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-28T04:42:26" hostname="Zihuangs-MacBook-Air.local" time="0.038">
+<testsuite name="use_case.summary.SummaryServiceInteractorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-30T18:14:44" hostname="Zihuangs-MacBook-Air.local" time="0.023">
   <properties/>
-  <testcase name="testExecute_Success()" classname="use_case.summary.SummaryServiceInteractorTest" time="0.021"/>
-  <testcase name="testExecute_Failure()" classname="use_case.summary.SummaryServiceInteractorTest" time="0.016"/>
+  <testcase name="testExecute_Success()" classname="use_case.summary.SummaryServiceInteractorTest" time="0.014"/>
+  <testcase name="testExecute_Failure()" classname="use_case.summary.SummaryServiceInteractorTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[java.lang.RuntimeException: Simulated DAO exception
-	at data_access.DataAccessObject.getSummary(DataAccessObject.java:39)
-	at use_case.SummaryServiceInteractor.execute(SummaryServiceInteractor.java:26)
+	at data_access.DataAccessObject.getSummary(DataAccessObject.java:40)
+	at use_case.SummaryServiceInteractor.execute(SummaryServiceInteractor.java:27)
 	at use_case.summary.SummaryServiceInteractorTest.testExecute_Failure(SummaryServiceInteractorTest.java:69)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

@@ -1,16 +1,12 @@
 package view;
 
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.*;
@@ -32,11 +28,13 @@ public class SummaryView extends JPanel implements ActionListener, PropertyChang
     /**
      * Constructs a SummaryView with the given ViewModel and Controller.
      *
-     * @param viewModel     The ViewModel to observe.
+     * @param viewModel         The ViewModel to observe.
+     * @param summaryController
      */
-    public SummaryView(SummaryViewModel viewModel) {
+    public SummaryView(SummaryViewModel viewModel, SummaryController summaryController) {
         this.viewModel = viewModel;
         this.viewModel.addPropertyChangeListener(this);
+        this.summaryController = summaryController;
         initialize();
     }
 
@@ -85,4 +83,5 @@ public class SummaryView extends JPanel implements ActionListener, PropertyChang
         generateQuiz();
 
     }
+
 }
