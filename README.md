@@ -80,6 +80,8 @@ gradle build
 ```bash
 ./gradlew run
 ```
+6. Set up your Rapid API key:
+- Obtain your API key from Rapid Platform. 
 
 ### Common Issues and Solutions
 - Gradle Not Found Error: Ensure that you have Gradle installed or use the Gradle wrapper (gradlew).
