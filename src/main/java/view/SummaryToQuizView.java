@@ -1,9 +1,5 @@
 package view;
 
-import interface_adapter.summary_to_quiz.SummaryToQuizController;
-import interface_adapter.summary_to_quiz.SummaryToQuizViewModel;
-import use_case.summary_to_quiz.SummaryToQuiz;
-
 import javax.swing.*;
 
 // import interface_adapter.login.LoginController;

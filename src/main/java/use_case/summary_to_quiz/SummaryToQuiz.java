@@ -1,5 +1,4 @@
 package use_case.summary_to_quiz;
-
 import java.util.Random;
 
 public class SummaryToQuiz {
