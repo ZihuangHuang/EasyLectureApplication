@@ -25,7 +25,8 @@ public class QuizServiceInteractor implements SummaryToQuizInputBoundary {
             SummaryToQuizOutputData outputData = new SummaryToQuizOutputData(
                     quiz.getcontent(),
                     quiz.getchoices(),
-                    quiz.getanswer()
+                    quiz.getanswer(),
+                    false
             );
 
             SummaryToQuizOutputBoundary.prepareSuccessView(outputData);
