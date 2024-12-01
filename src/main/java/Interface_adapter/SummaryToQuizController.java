@@ -1,6 +1,7 @@
-package interface_adapter;
+package Interface_adapter;
 
 import use_case.summary_to_quiz.SummaryToQuizInputBoundary;
+import use_case.summary_to_quiz.SummaryToQuizInputData;
 
 /**
  * Controller class that handles user input for quiz.
@@ -11,8 +12,8 @@ public class SummaryToQuizController {
      */
     private final SummaryToQuizInputBoundary summaryToQuizUseCaseInteractor;
 
-    public SummaryController(SummaryServiceInputBoundary summaryServiceUseCaseInteractor) {
-        this.summaryServiceUseCaseInteractor = summaryServiceUseCaseInteractor;
+    public SummaryToQuizController(SummaryToQuizInputBoundary summaryServiceUseCaseInteractor) {
+        this.summaryToQuizUseCaseInteractor = summaryServiceUseCaseInteractor;
     }
 
     public SummaryToQuizController() {
@@ -20,11 +21,11 @@ public class SummaryToQuizController {
     }
 
     /**
-     * Executes the summary Use Case.
-     * @param transcript The transcript of the lecture to summarize.
+     * Executes the summarytoquiz Use Case.
+     * @param summary The summary of the lecture to generate the quiz.
      */
-    public void execute(String transcript) {
-        final SummaryServiceInputData summaryServiceInputData = new SummaryServiceInputData(transcript);
-        summaryServiceUseCaseInteractor.execute(summaryServiceInputData);
+    public void execute(String summary) {
+        final SummaryToQuizInputData summaryToQuizInputData = new SummaryToQuizInputData(summary);
+        summaryToQuizUseCaseInteractor.execute(summaryToQuizInputData);
     }
 }
