@@ -1,6 +1,8 @@
-package use_case;
+package use_case.Summary;
 
 
+
+import use_case.TranscriptionReader;
 
 import java.io.IOException;
 

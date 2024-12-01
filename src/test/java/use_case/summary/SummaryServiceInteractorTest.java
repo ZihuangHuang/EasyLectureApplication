@@ -1,12 +1,7 @@
 package use_case.summary;
 import data_access.DataAccessObject;
-import entity.Summary;
 import org.junit.jupiter.api.Test;
-import use_case.SummaryServiceInputBoundary;
-import use_case.SummaryServiceInputData;
-import use_case.SummaryServiceInteractor;
-import use_case.SummaryServiceUserDataAccessInterface;
-import use_case.*;
+import use_case.Summary.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 

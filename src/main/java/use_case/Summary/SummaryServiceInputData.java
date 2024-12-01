@@ -1,4 +1,4 @@
-package use_case;
+package use_case.Summary;
 
 /**
  * The input data for the commonSummaryFactory Use Case.

@@ -11,8 +11,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.*;
 
-import interface_adapter.SummaryController;
-import interface_adapter.SummaryViewModel;
+import interface_adapter.Summary.SummaryController;
+import interface_adapter.Summary.SummaryViewModel;
 
 /**
  * The View for when the user is viewing a summary content in the program.

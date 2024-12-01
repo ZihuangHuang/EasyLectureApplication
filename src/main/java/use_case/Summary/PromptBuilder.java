@@ -1,4 +1,4 @@
-package use_case;
+package use_case.Summary;
 
 /**
  * Utility class responsible for building prompts for the Cohere API.

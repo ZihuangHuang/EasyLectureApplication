@@ -1,7 +1,7 @@
-package interface_adapter;
+package interface_adapter.Summary;
 
-import use_case.SummaryServiceInputBoundary;
-import use_case.SummaryServiceInputData;
+import use_case.Summary.SummaryServiceInputBoundary;
+import use_case.Summary.SummaryServiceInputData;
 
 /**
  * Controller class that handles user input for lecture summarization.
