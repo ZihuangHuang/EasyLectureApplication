@@ -1,4 +1,4 @@
-package main;
+package use_case;
 
 import java.io.IOException;
 import java.net.URI;
@@ -32,9 +32,6 @@ public class TranscriptFetcher {
             // Send the request and get the response
             HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
 
-            // Get only the "text" field
-            ObjectMapper mapper = new ObjectMapper();
-            JsonNode jsonNode = mapper.readTree("response");
             // Print the response body
             System.out.println("Transcript Response:");
             System.out.println(response.body());
