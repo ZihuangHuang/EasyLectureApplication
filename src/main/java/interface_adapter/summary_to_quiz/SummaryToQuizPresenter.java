@@ -1,3 +1,7 @@
+package interface_adapter.summary_to_quiz;
+
+import use_case.summary_to_quiz.SummaryToQuizOutputBoundary;
+import use_case.summary_to_quiz.SummaryToQuizOutputData;
 
 /**
  * Presenter class that formats and presents the quizzes.
