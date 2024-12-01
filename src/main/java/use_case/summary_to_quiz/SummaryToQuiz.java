@@ -1,7 +1,5 @@
 package use_case.summary_to_quiz;
 
-import use_case.summary_to_quiz.SummaryToQuizInputData;
-import java.io.IOException;
 import java.util.Random;
 
 public class SummaryToQuiz {
