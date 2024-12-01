@@ -4,27 +4,35 @@ import java.util.List;
 /**
  * Output Data for the commonQuizFactory Use Case.
  */
-public class QuizServiceOutputData {
+public class SummaryToQuizOutputData {
 
-    private final String summaryText;
-    private final List<String> topics;
+    private final String content;
+    private final List<String> choices;
+    private final String answer;
     private final boolean useCaseFailed;
 
-    public QuizServiceOutputData(String summaryText, List<String> topic, boolean useCaseFailed) {
-        this.summaryText = summaryText;
-        this.topics = topic;
+    public SummaryToQuizOutputData(String content, List<String> choices, String answer, boolean useCaseFailed) {
+        this.content = content;
+        this.choices = choices;
+        this.answer = answer;
+        // maybe some exception-relating items added later.
         this.useCaseFailed = useCaseFailed;
     }
 
-    public String getSummaryText() {
-        return summaryText;
+    public String getcontent() {
+        return content;
     }
 
-    public List<String> getTopics() {
-        return topics;
+    public List<String> getchoices() {
+        return choices;
+    }
+
+    public String getanswer() {
+        return answer;
     }
 
     public boolean isUseCaseFailed() {
         return useCaseFailed;
     }
+
 }
