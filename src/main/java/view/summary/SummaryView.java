@@ -1,4 +1,4 @@
-package view;
+package view.summary;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,8 +11,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.*;
 
-import interface_adapter.SummaryController;
-import interface_adapter.SummaryViewModel;
+import interface_adapter.summary.SummaryController;
+import interface_adapter.summary.SummaryViewModel;
 
 /**
  * The View for when the user is viewing a summary content in the program.

@@ -1,14 +1,14 @@
 package app;
 
 import data_access.DataAccessObject;
-import interface_adapter.SummaryController;
-import interface_adapter.SummaryPresenter;
-import interface_adapter.SummaryViewModel;
+import interface_adapter.summary.SummaryController;
+import interface_adapter.summary.SummaryPresenter;
+import interface_adapter.summary.SummaryViewModel;
 import use_case.Summary.SummaryServiceInputBoundary;
 import use_case.Summary.SummaryServiceOutputBoundary;
 import use_case.Summary.SummaryServiceInteractor;
 import use_case.Summary.SummaryServiceUserDataAccessInterface;
-import view.SummaryView;
+import view.summary.SummaryView;
 /**
  * The AppBuilder class is responsible for putting together the pieces of
  * our CA architecture; piece by piece.
