@@ -1,11 +1,14 @@
 package use_case;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class TranscriptFetcher {
     public static void main(String[] args) {
@@ -32,13 +35,27 @@ public class TranscriptFetcher {
             // Send the request and get the response
             HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
 
-            // Print the response body
-            System.out.println("Transcript Response:");
-            System.out.println(response.body());
+            // Parse the response
+            String responseBody = response.body();
+            JSONObject jsonResponse = new JSONObject(responseBody);
+
+            // Extract the content array
+            JSONArray contentArray = jsonResponse.getJSONArray("content");
+
+            // Write the text fields to a file
+            FileWriter fileWriter = new FileWriter("transcript.txt");
+            for (int i = 0; i < contentArray.length(); i++) {
+                JSONObject contentObject = contentArray.getJSONObject(i);
+                String text = contentObject.getString("text");
+                fileWriter.write(text + System.lineSeparator());
+            }
+            fileWriter.close();
+
+            System.out.println("Transcript saved to transcript.txt");
         } catch (IllegalArgumentException e) {
             System.err.println("Error: " + e.getMessage());
         } catch (IOException | InterruptedException e) {
-            System.err.println("An error occurred while fetching the transcript: " + e.getMessage());
+            System.err.println("An error occurred while fetching or saving the transcript: " + e.getMessage());
         } finally {
             scanner.close();
         }
