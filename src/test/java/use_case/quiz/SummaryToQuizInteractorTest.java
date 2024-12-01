@@ -1,4 +1,4 @@
-package use_case.summary;
+package use_case.quiz;
 
 import data_access.DataAccessObject;
 import org.junit.jupiter.api.Test;
