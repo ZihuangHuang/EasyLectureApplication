@@ -2,7 +2,6 @@ package view;
 
 import interface_adapter.GetTranscript.GetTranscriptViewModel;
 import interface_adapter.GetTranscript.GetTranscriptController;
-import use_case.GetTranscript.GetTranscriptInputData;
 
 import javax.swing.*;
 import java.awt.*;
