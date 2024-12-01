@@ -1,4 +1,4 @@
-package Interface_adapter.summary_to_quiz;
+package interface_adapter.summary_to_quiz;
 
 import entity.Quiz;
 import use_case.summary_to_quiz.SummaryToQuiz;
