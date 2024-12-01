@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="homework-5" />
         <module name="EasyLectureApplication2" />
+        <module name="EasyLectureApplication3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8" />

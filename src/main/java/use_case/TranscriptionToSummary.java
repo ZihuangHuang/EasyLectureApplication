@@ -1,31 +1,29 @@
 package use_case;
 
-
-
 import java.io.IOException;
-
+import java.util.Scanner;
 
 public class TranscriptionToSummary {
-    /**
-     * The entry point of the application. Reads a transcription from a specified file path,
-     * generates a summary using the {@link SummaryService}, and prints the summary to the console.
-     *
-     * @param args Command-line arguments where:
-     *             <ul>
-     *                 <li>{@code args[0]} (optional): The file path to the transcription text file.</li>
-     *             </ul>
-     *             If no arguments are provided, it defaults to {@code "path/to/transcription.txt"}.
-     */
     public static void main(String[] args) {
-        String transcriptionFilePath = "path/to/transcription.txt";
+        // Create a scanner to take user input
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a YouTube video URL:");
+        String youtubeUrl = scanner.nextLine().trim(); // Get the URL from the user
 
         try {
-            String transcription = TranscriptionReader.readTranscription(transcriptionFilePath);
+            // Fetch the transcription using TranscriptFetcher
+            String transcription = TranscriptFetcher.fetchTranscript(youtubeUrl);
+
+            // Generate the summary using the transcription
             String summary = SummaryService.generateSummary(transcription);
-            System.out.println("Lecture commonSummaryFactory:\n" + summary);
-        } catch (IOException e) {
-            System.err.println("Error reading transcription file: " + e.getMessage());
+
+            // Output the summary
+            System.out.println("Lecture Summary:\n" + summary);
+        } catch (IOException | InterruptedException e) {
+            System.err.println("An error occurred: " + e.getMessage());
+        } finally {
+            scanner.close();
         }
     }
 }
-
