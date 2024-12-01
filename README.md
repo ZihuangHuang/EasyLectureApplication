@@ -5,7 +5,7 @@
 This EasyLectureApp is a Java-based application designed to help students and educators efficiently digest lecture content from YouTube videos. By automatically extracting transcriptions from YouTube lectures, the program generates concise summaries and creates quizzes based on the summarized content. This tool enhances learning by providing easy-to-understand summaries and interactive quizzes that can be shared with peers or used for self-assessment.
 
 
-### ✍️ Authors
+### ✍️ Authors ✍️
 - __Huy Dang__
 - __Zihuang Huang__
 - __Nguyen Nam Anh Tran__
@@ -61,14 +61,18 @@ git clone https://github.com/yourusername/EasyLectureApplication.git
 ```bash
 cd EasyLectureApplication
 ```
-3. Set up your Cohere API key:
+
+3. Set up your Rapid API key:
+- Obtain your API key from Rapid Platform.
+
+4. Set up your Cohere API key:
 - Obtain your API key from Cohere Platform.
 - Create a file named config.properties in the src/main/resources directory.
 - Add the following line to the file
 ```vbnet
 cohere.api.key=YOUR_COHERE_API_KEY
 ```
-4. Build the project using wrapper
+5. Build the project using wrapper
 ```bash
 ./gradlew build
 ```
@@ -76,10 +80,11 @@ or using local Gradle installation
 ```bash
 gradle build
 ```
-5. Run the command to use
+6. Run the command to use
 ```bash
 ./gradlew run
 ```
+
 
 ### Common Issues and Solutions
 - Gradle Not Found Error: Ensure that you have Gradle installed or use the Gradle wrapper (gradlew).

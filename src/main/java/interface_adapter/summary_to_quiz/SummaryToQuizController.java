@@ -1,4 +1,4 @@
-package Interface_adapter.summary_to_quiz;
+
 
 import use_case.summary_to_quiz.SummaryToQuizInputBoundary;
 import use_case.summary_to_quiz.SummaryToQuizInputData;
