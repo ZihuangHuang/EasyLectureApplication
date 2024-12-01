@@ -1,4 +1,4 @@
-package use_case;
+package use_case.Summary;
 
 import com.cohere.api.Cohere;
 import com.cohere.api.resources.v2.requests.V2ChatRequest;

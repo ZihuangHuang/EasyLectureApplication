@@ -1,18 +1,13 @@
 package app;
 
-import java.awt.*;
-import javax.swing.*;
-
 import data_access.DataAccessObject;
-import entity.Summary;
-import entity.Lecture;
 import interface_adapter.SummaryController;
 import interface_adapter.SummaryPresenter;
 import interface_adapter.SummaryViewModel;
-import use_case.SummaryServiceInputBoundary;
-import use_case.SummaryServiceOutputBoundary;
-import use_case.SummaryServiceInteractor;
-import use_case.SummaryServiceUserDataAccessInterface;
+import use_case.Summary.SummaryServiceInputBoundary;
+import use_case.Summary.SummaryServiceOutputBoundary;
+import use_case.Summary.SummaryServiceInteractor;
+import use_case.Summary.SummaryServiceUserDataAccessInterface;
 import view.SummaryView;
 /**
  * The AppBuilder class is responsible for putting together the pieces of

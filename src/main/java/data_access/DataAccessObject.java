@@ -2,7 +2,7 @@ package data_access;
 
 import entity.Summary;
 import entity.Lecture;
-import use_case.SummaryServiceUserDataAccessInterface;
+import use_case.Summary.SummaryServiceUserDataAccessInterface;
 import java.util.List;
 import java.util.Arrays;
 /**

@@ -1,7 +1,7 @@
 package interface_adapter;
 
-import use_case.SummaryServiceOutputBoundary;
-import use_case.SummaryServiceOutputData;
+import use_case.Summary.SummaryServiceOutputBoundary;
+import use_case.Summary.SummaryServiceOutputData;
 /**
  * Presenter class that formats and presents the summary and topics.
  */

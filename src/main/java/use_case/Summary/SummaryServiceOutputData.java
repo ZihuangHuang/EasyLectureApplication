@@ -1,4 +1,4 @@
-package use_case;
+package use_case.Summary;
 import java.util.List;
 /**
  * Output Data for the commonSummaryFactory Use Case.
