@@ -1,11 +1,15 @@
 package view;
 
-import javax.swing.*;
+import interface_adapter.summary_to_quiz.SummaryToQuizController;
+import interface_adapter.summary_to_quiz.SummaryToQuizViewModel;
+import use_case.summary_to_quiz.SummaryToQuiz;
 
-// import interface_adapter.login.LoginController;
-// import interface_adapter.login.LoginState;
-// import interface_adapter.login.LoginViewModel;
-// edit later.
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.*;
 
 public class SummaryToQuizView extends JPanel {
     private final SummaryToQuizViewModel summaryToQuizViewModel;
