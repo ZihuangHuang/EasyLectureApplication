@@ -1,13 +1,19 @@
 package use_case.summary_to_quiz;
 
+import entity.Quiz;
+
 /**
- * DAO for the QuizService Use Case.
+ * DAO for the SummaryToQuiz Use Case.
  */
-public interface QuizServiceUserDataAccessInterface {
+public interface SummaryToQuizUserDataAccessInterface {
     /**
-     * Summarizes the content given a transcript.
-     * @param lecture the transcript fetched from a YouTube URL.
-     * @return The summary
+     * Generate the quiz given a summary.
+     *
+     * @param summary from the input.
+     * @return The quiz.
      */
-    Summary getSummary(Lecture lecture);
+    static Quiz getQuiz(String summary) {
+        return null;
+    }
+    // more methods may be added here.
 }
