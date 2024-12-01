@@ -61,14 +61,18 @@ git clone https://github.com/yourusername/EasyLectureApplication.git
 ```bash
 cd EasyLectureApplication
 ```
-3. Set up your Cohere API key:
+
+3. Set up your Rapid API key:
+- Obtain your API key from Rapid Platform.
+
+4. Set up your Cohere API key:
 - Obtain your API key from Cohere Platform.
 - Create a file named config.properties in the src/main/resources directory.
 - Add the following line to the file
 ```vbnet
 cohere.api.key=YOUR_COHERE_API_KEY
 ```
-4. Build the project using wrapper
+5. Build the project using wrapper
 ```bash
 ./gradlew build
 ```
@@ -76,12 +80,11 @@ or using local Gradle installation
 ```bash
 gradle build
 ```
-5. Run the command to use
+6. Run the command to use
 ```bash
 ./gradlew run
 ```
-6. Set up your Rapid API key:
-- Obtain your API key from Rapid Platform. 
+
 
 ### Common Issues and Solutions
 - Gradle Not Found Error: Ensure that you have Gradle installed or use the Gradle wrapper (gradlew).
