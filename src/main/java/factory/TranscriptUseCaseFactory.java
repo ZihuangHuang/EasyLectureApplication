@@ -9,7 +9,7 @@ import view.transcript.TranscriptView;
  * Factory class for creating and wiring transcript-related components
  */
 public class TranscriptUseCaseFactory {
-    private static final String API_KEY = "e0a48d17cemshc6cc044bc5093cep180108jsn722dec23cf18";  // In real app, get from config/env
+    private static final String API_KEY = "e0a48d17cemshc6cc044bc5093cep180108jsn722dec23cf18";
 
     /**
      * Creates a fully configured transcript use case with all its dependencies

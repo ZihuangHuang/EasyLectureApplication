@@ -58,23 +58,3 @@ public class TranscriptInteractor implements TranscriptInputBoundary {
      * @throws IllegalArgumentException if validation fails
      */
 }
-
-/**
- * Strategy interface for URL validation
- */
-interface TranscriptValidator {
-    boolean isValidUrl(String url);
-}
-
-/**
- * Default implementation of TranscriptValidator
- */
-class DefaultTranscriptValidator implements TranscriptValidator {
-    @Override
-    public boolean isValidUrl(String url) {
-        // Basic URL validation
-        return url != null &&
-                url.trim().length() > 0 &&
-                url.toLowerCase().contains("youtube.com/");
-    }
-}
