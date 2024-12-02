@@ -5,7 +5,7 @@
 This EasyLectureApp is a Java-based application designed to help students and educators efficiently digest lecture content from YouTube videos. By automatically extracting transcriptions from YouTube lectures, the program generates concise summaries and creates quizzes based on the summarized content. This tool enhances learning by providing easy-to-understand summaries and interactive quizzes that can be shared with peers or used for self-assessment.
 
 
-### ✍️ Authors ✍️
+### ✍️ Authors 
 - __Huy Dang__
 - __Zihuang Huang__
 - __Nguyen Nam Anh Tran__
