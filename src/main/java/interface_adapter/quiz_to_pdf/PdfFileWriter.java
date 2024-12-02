@@ -2,7 +2,7 @@ package interface_adapter.quiz_to_pdf;
 
 import com.itextpdf.text.DocumentException;
 import entity.JsonDataAccess;
-import use_case.PdfGenerator;
+import use_case.quiz_to_pdf.PdfGenerator;
 
 import java.io.IOException;
 
