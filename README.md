@@ -176,4 +176,4 @@ Review Process:
 - Approved contributions will be merged into the main branch.
 ***
 ## Again, contributions Are Welcome!
-If you have any questions about contributing, feel free to open an issue or contact us at zihuang.huang@example.com.
+If you have any questions about contributing, feel free to open an issue or contact us at zihuang.huang@mail.utoronto.ca / huy.dang@mail.utoronto.ca !
