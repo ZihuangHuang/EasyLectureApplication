@@ -12,8 +12,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
 
+//Use case to combine all functions and generate the PDF
 public class PdfGenerator {
-    public void convert(JsonDataAccess jsonData, String outputPdfPath) throws IOException, DocumentException {
+    public void execute(JsonDataAccess jsonData, String outputPdfPath) throws IOException, DocumentException {
         OutputStream outputStream = Files.newOutputStream(Paths.get(outputPdfPath));
 
         Document document = new Document();

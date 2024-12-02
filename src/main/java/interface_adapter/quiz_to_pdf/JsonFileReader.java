@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
+//reads Json file and execute into a JsonDataAccess format to be used by PdfFileWriter
 public class JsonFileReader {
     public JsonDataAccess readJsonFromFile(String jsonFilePath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();

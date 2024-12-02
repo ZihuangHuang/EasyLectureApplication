@@ -6,6 +6,7 @@ import use_case.PdfGenerator;
 
 import java.io.IOException;
 
+//initiates JsonFileReader and execute JsonDataAccess into a PDF for PdfGenerator to use
 public class PdfFileWriter {
     private final PdfGenerator converter;
 
@@ -16,7 +17,7 @@ public class PdfFileWriter {
     public void writePdf(String jsonFilePath, String outputPdfPath) throws IOException, DocumentException {
         JsonFileReader reader = new JsonFileReader();
         JsonDataAccess jsonData = reader.readJsonFromFile(jsonFilePath);
-        converter.convert(jsonData, outputPdfPath);
+        converter.execute(jsonData, outputPdfPath);
     }
 }
 
