@@ -1,14 +1,14 @@
 package use_case;
 
 import entity.JsonDataAccess;
-import itextpdf.kernel.pdf.PdfDocument;
-import itextpdf.kernel.pdf.PdfWriter;
-import itextpdf.layout.Document;
-import itextpdf.layout.element.Paragraph;
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Paragraph;
 
 import java.io.IOException;
 
-public class JsonToPdfConverter {
+public class PdfGenerator {
     public void convert(JsonDataAccess jsonData, String outputPdfPath) throws IOException {
         PdfWriter writer = new PdfWriter(outputPdfPath);
         PdfDocument pdfDoc = new PdfDocument(writer);

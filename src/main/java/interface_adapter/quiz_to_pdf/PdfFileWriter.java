@@ -1,14 +1,14 @@
 package interface_adapter.quiz_to_pdf;
 
 import entity.JsonDataAccess;
-import use_case.JsonToPdfConverter;
+import use_case.PdfGenerator;
 
 import java.io.IOException;
 
 public class PdfFileWriter {
-    private final JsonToPdfConverter converter;
+    private final PdfGenerator converter;
 
-    public PdfFileWriter(JsonToPdfConverter converter) {
+    public PdfFileWriter(PdfGenerator converter) {
         this.converter = converter;
     }
 

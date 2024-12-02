@@ -18,6 +18,7 @@ dependencies {
     api 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.3'
     api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.3'
     implementation 'com.cohere:cohere-java:+'
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.0.6'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
