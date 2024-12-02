@@ -2,6 +2,7 @@ package interface_adapter.transcript;
 
 import use_case.transcript.TranscriptOutputBoundary;
 import use_case.transcript.TranscriptOutputData;
+import view.transcript.TranscriptView;
 
 /**
  * Presenter class that formats and presents the transcription
@@ -9,7 +10,7 @@ import use_case.transcript.TranscriptOutputData;
 public class TranscriptPresenter implements TranscriptOutputBoundary {
     private final TranscriptViewModel transcriptViewModel;
 
-    public TranscriptPresenter(TranscriptViewModel transcriptViewModel){
+    public TranscriptPresenter(TranscriptView transcriptViewModel){
         this.transcriptViewModel = transcriptViewModel;
     }
 

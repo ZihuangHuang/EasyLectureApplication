@@ -2,7 +2,10 @@ package factory;
 
 import data_access.transcript.TranscriptDAO;
 import interface_adapter.transcript.TranscriptPresenter;
-import use_case.transcript.*;
+import use_case.transcript.TranscriptDataUserAccessInterface;
+import use_case.transcript.TranscriptOutputBoundary;
+import use_case.transcript.TranscriptInputBoundary;
+import use_case.transcript.TranscriptInteractor;
 import view.transcript.TranscriptView;
 
 /**
