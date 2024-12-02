@@ -7,23 +7,18 @@ package use_case.transcript;
 public class TranscriptInteractor implements TranscriptInputBoundary {
     private final TranscriptDataUserAccessInterface transcriptDataAccessObject;
     private final TranscriptOutputBoundary transcriptPresenter;
-    private final TranscriptValidator transcriptValidator;
 
     /**
      * Constructs a new TranscriptInteractor with required dependencies.
      *
      * @param transcriptDataAccessObject Data access object for retrieving transcripts
      * @param transcriptPresenter Presenter for preparing the view
-     * @param transcriptValidator Validator for URL validation (optional, can be null)
      */
     public TranscriptInteractor(
             TranscriptDataUserAccessInterface transcriptDataAccessObject,
-            TranscriptOutputBoundary transcriptPresenter,
-            TranscriptValidator transcriptValidator) {
+            TranscriptOutputBoundary transcriptPresenter) {
         this.transcriptDataAccessObject = transcriptDataAccessObject;
         this.transcriptPresenter = transcriptPresenter;
-        this.transcriptValidator = transcriptValidator != null ?
-                transcriptValidator : new DefaultTranscriptValidator();
     }
 
     /**
@@ -35,14 +30,12 @@ public class TranscriptInteractor implements TranscriptInputBoundary {
     @Override
     public void execute(TranscriptInputData transcriptInputData) {
         try {
-            // Step 1: Validate input
-            validateInput(transcriptInputData);
 
-            // Step 2: Process request
+            // Step 1: Process request
             String youtubeUrl = transcriptInputData.getYoutubeURL();
             entity.Transcript transcript = transcriptDataAccessObject.getTranscript(youtubeUrl);
 
-            // Step 3: Prepare success response
+            // Step 2: Prepare success response
             TranscriptOutputData outputData = new TranscriptOutputData(
                     transcript.getTranscript(),
                     false
@@ -64,11 +57,6 @@ public class TranscriptInteractor implements TranscriptInputBoundary {
      * @param inputData Input data to validate
      * @throws IllegalArgumentException if validation fails
      */
-    private void validateInput(TranscriptInputData inputData) {
-        if (!transcriptValidator.isValidUrl(inputData.getYoutubeURL())) {
-            throw new IllegalArgumentException("Invalid YouTube URL format");
-        }
-    }
 }
 
 /**

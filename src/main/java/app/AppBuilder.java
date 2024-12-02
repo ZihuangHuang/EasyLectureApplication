@@ -21,8 +21,6 @@ public class AppBuilder {
  * Builds and starts the application by wiring together all components.
  */
     public static void buildApp() {
-        String apiKey = "jwgBCFFlmTYQiX6B3jhukmHwq1HDEwNRabSUvY9Z";
-
         SummaryViewModel viewModel = new SummaryViewModel();
         SummaryServiceOutputBoundary presenter = new SummaryPresenter(viewModel);
         SummaryServiceUserDataAccessInterface summaryDAO = new DataAccessObject();
