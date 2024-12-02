@@ -10,7 +10,7 @@ import view.transcript.TranscriptView;
 public class TranscriptPresenter implements TranscriptOutputBoundary {
     private final TranscriptViewModel transcriptViewModel;
 
-    public TranscriptPresenter(TranscriptView transcriptViewModel){
+    public TranscriptPresenter(TranscriptViewModel transcriptViewModel){
         this.transcriptViewModel = transcriptViewModel;
     }
 
