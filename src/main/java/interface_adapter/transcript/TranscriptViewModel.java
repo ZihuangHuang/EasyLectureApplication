@@ -4,6 +4,7 @@ import java.util.List;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+
 /**
  * The View Model for the Transcript View
  */
