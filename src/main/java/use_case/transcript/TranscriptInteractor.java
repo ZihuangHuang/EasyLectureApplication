@@ -50,12 +50,5 @@ public class TranscriptInteractor implements TranscriptInputBoundary {
             transcriptPresenter.prepareFailView("Error retrieving transcript: " + e.getMessage());
         }
     }
-
-    /**
-     * Validates the input data using the validator strategy.
-     *
-     * @param inputData Input data to validate
-     * @throws IllegalArgumentException if validation fails
-     */
 }
 
