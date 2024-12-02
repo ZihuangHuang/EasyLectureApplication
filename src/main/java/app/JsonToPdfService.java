@@ -1,7 +1,8 @@
 package app;
 
+import com.itextpdf.text.DocumentException;
 import interface_adapter.quiz_to_pdf.PdfFileWriter;
-import use_case.JsonToPdfConverter;
+import use_case.PdfGenerator;
 
 import java.io.IOException;
 
@@ -9,7 +10,7 @@ public class JsonToPdfService {
     private final PdfFileWriter pdfWriter;
 
     public JsonToPdfService() {
-        JsonToPdfConverter converter = new JsonToPdfConverter();
+        PdfGenerator converter = new PdfGenerator();
         this.pdfWriter = new PdfFileWriter(converter);
     }
 
@@ -18,6 +19,8 @@ public class JsonToPdfService {
             pdfWriter.writePdf(jsonFilePath, outputPdfPath);
         } catch (IOException e) {
             System.err.println("Error generating PDF: " + e.getMessage());
+        } catch (DocumentException e) {
+            throw new RuntimeException(e);
         }
     }
 }
