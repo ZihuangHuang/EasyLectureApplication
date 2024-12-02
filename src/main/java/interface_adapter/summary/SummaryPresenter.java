@@ -1,4 +1,4 @@
-package interface_adapter;
+package interface_adapter.summary;
 
 import use_case.Summary.SummaryServiceOutputBoundary;
 import use_case.Summary.SummaryServiceOutputData;

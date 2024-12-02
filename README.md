@@ -5,11 +5,23 @@
 This EasyLectureApp is a Java-based application designed to help students and educators efficiently digest lecture content from YouTube videos. By automatically extracting transcriptions from YouTube lectures, the program generates concise summaries and creates quizzes based on the summarized content. This tool enhances learning by providing easy-to-understand summaries and interactive quizzes that can be shared with peers or used for self-assessment.
 
 
-### ✍️ Authors ✍️
+### ✍️ Authors 
 - __Huy Dang__
+    1. 📃User Story: As a student who’s first language is not English, I struggle when listening to lectures and online videos. Thus, I want a program that is able to transcribe my videos into a written script so that I can read and understand the content better.
+
 - __Zihuang Huang__
+  
+   2. 📃User Story: As a student who is often busy with extracurricular work, I want to have a program that helps me catch up on recorded lectures and content videos quickly. Thus, I am looking for a program that can give me a written summary of lectures and videos quickly so that I am able to scan through, understand the content, and save time.
+
 - __Nguyen Nam Anh Tran__
+  
+   3. 📃User Story: As a student who loves to study in groups, I want to create quizzes that I can hand out to everyone based on each lecture that we attend. I am looking for a program that can generate quiz questions based on a recorded lecture or content video, which I can then use to help my study group.
+
 - __Eric Zhang__
+  
+   4. 📃User Story: As a student who learns best by testing myself, I want a program that can transform content from my recorded lectures and content videos into quizzes that I can use to test my knowledge. Since I study best with multiple choice quizzes, I want my program to be able to generate as many questions as I need based on a single lecture video.
+
+📃__Team User Story__ : As a student, I want the ability to quickly get the main ideas of a lecture before actually diving into it, as well as rapid assessment and feedback on my understanding by quizzes based on the lecture content.
 
 ## Table of Contents
 

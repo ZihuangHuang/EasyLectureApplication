@@ -1,4 +1,4 @@
-package view;
+package view.quiz;
 
 import interface_adapter.summary_to_quiz.SummaryToQuizController;
 import interface_adapter.summary_to_quiz.SummaryToQuizViewModel;

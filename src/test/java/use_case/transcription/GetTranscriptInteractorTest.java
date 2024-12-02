@@ -9,11 +9,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import use_case.GetTranscript.GetTranscriptInputData;
-import use_case.GetTranscript.GetTranscriptInputBoundary;
-import use_case.GetTranscript.GetTranscriptInteractor;
-import use_case.GetTranscript.GetTranscriptOutputData;
-
 /**
  * Test class for GetTranscriptInteractor.
  */

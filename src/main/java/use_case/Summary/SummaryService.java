@@ -6,7 +6,6 @@ import com.cohere.api.types.ChatMessageV2;
 import com.cohere.api.types.ChatResponse;
 import com.cohere.api.types.UserMessage;
 import com.cohere.api.types.UserMessageContent;
-
 import java.util.List;
 
 /**

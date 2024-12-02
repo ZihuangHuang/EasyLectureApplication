@@ -22,7 +22,6 @@ public class SummaryServiceInteractor implements SummaryServiceInputBoundary {
     @Override
     public void execute(SummaryServiceInputData summaryServiceInputData) {
         try {
-            // Assuming we have a way to get the lecture URL or create a Lecture object, should be done by Huy.
             Lecture lecture = new Lecture(null, summaryServiceInputData.getTranscript());
             Summary summary = summaryDataAccessInterface.getSummary(lecture);
 
