@@ -15,7 +15,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 
 - __Nguyen Nam Anh Tran__
   
-   3. 📃User Story: As a student who loves to study in groups, I want to create quizzes that I can hand out to everyone based on each lecture that we attend. I am looking for a program that can generate quiz questions based on a recorded lecture or content video, which I can then use to help my study group.
+   3. 📃User Story: I enjoy studying with others, but a lot of the times, I'd like to share what I've learnt with my peerse. Therefore, I'd like to have a program that can generate a PDF file that contains questions which I've got online. 
 
 - __Eric Zhang__
   
