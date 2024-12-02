@@ -2,7 +2,7 @@ package app;
 
 import com.itextpdf.text.DocumentException;
 import interface_adapter.quiz_to_pdf.PdfFileWriter;
-import use_case.PdfGenerator;
+import use_case.quiz_to_pdf.PdfGenerator;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ public class JsonToPdfService {
     private final PdfFileWriter pdfWriter;
 
     public JsonToPdfService() {
-        PdfGenerator converter = new PdfGenerator();
+        PdfGenerator converter = new use_case.quiz_to_pdf.PdfGenerator();
         this.pdfWriter = new PdfFileWriter(converter);
     }
 

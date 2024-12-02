@@ -5,6 +5,7 @@ import app.JsonToPdfService;
 import java.io.File;
 import java.nio.file.Files;
 
+//Tests an example for the PdfGenerator class
 public class PdfGeneratorTest {
 
     public static void main(String[] args) {
