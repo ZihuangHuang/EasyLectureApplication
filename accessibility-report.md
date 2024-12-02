@@ -1,5 +1,5 @@
 # Accessibility Report
-__Equitable Use__
+__Equitable Use__ ⚖️
 
 Current Features Adhering to This Principle:
 
@@ -13,7 +13,7 @@ Future Enhancements:
 - Alternate Formats: We will plan to update our softward to provide summaries and quizzes in audio or Braille-ready formats for users with different sensory abilities.
 ___
 
-__Flexibility in Use__
+__Flexibility in Use__ 🚀
 
 Current Feature Adhering to This Principle:
 - Customizable Input: Users can input any YouTube lecture URL, allowing them to choose content that matches their interests or educational needs.
@@ -23,7 +23,7 @@ Future Enhancements:
 - Quiz Customization: Enable users to choose question types (multiple-choice, true/false, short answer) to match their learning preferences.
 ___
 
-__Simple and Intuitive Use__
+__Simple and Intuitive Use__ 🥳
 
 Current Features Adhering to This Principle:
 - User-Friendly Interface: The application provides a straightforward interface with clear labels and instructions.
@@ -35,19 +35,19 @@ Future Enhancements:
 - Language Options: Offer the interface in multiple languages to aid multilingual speakers like international students.
 ___
 
-__Perceptible Information__
+__Perceptible Information__ 🧐
 
 - The lacking features such as audio feedback can be implemented in the future, with this in hand user can be provided auditory notifications or summaries to prevent visual impairments from causing limitations.
 ___
 
-__Tolerance For Error__
+__Tolerance For Error__ 😎👌🔥
 
 For this one I will briefly list some of the potential features that our team can add in the future:
 - The undo functionality which allows users to go back to previous steps without losing their progress.
 - And a feature that grants user to auto-save progress. In other words, such functionality saves user inputs and progress to prevent data loss in case of accidental program closures or exits.
 ___
 
-__Low Physical Effort__
+__Low Physical Effort__ 👍
 
 Current Features Adhering to This Principle:
 
@@ -60,7 +60,7 @@ Future Enhancements:
 - Voice Commands: Integrate voice control capabilities to reduce physical effort further.
 ___
 
-__Size and Space For Approach and Use__
+__Size and Space For Approach and Use__ 💁🏽
 
 Current Feature Adhering to This Principle:
 - Responsive Design: The interface is designed to be accessible on various devices and screen sizes, from desktops to tablets.
