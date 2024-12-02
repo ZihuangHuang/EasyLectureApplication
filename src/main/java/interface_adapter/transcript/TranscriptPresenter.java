@@ -2,6 +2,7 @@ package interface_adapter.transcript;
 
 import use_case.transcript.TranscriptOutputBoundary;
 import use_case.transcript.TranscriptOutputData;
+import view.transcript.TranscriptView;
 
 /**
  * Presenter class that formats and presents the transcription

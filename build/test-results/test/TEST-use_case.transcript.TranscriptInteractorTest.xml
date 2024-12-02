@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="use_case.transcript.TranscriptInteractorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-12-02T02:36:48" hostname="Huys-MacBook-Air.local" time="0.035">
+  <properties/>
+  <testcase name="execute_WhenRuntimeErrorOccurs_ShouldPrepareFailView()" classname="use_case.transcript.TranscriptInteractorTest" time="0.025"/>
+  <testcase name="execute_WhenValidURL_ShouldPrepareSuccessView()" classname="use_case.transcript.TranscriptInteractorTest" time="0.006"/>
+  <testcase name="execute_WhenInvalidURL_ShouldPrepareFailView()" classname="use_case.transcript.TranscriptInteractorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -58,3 +58,4 @@ public class TranscriptInteractor implements TranscriptInputBoundary {
      * @throws IllegalArgumentException if validation fails
      */
 }
+

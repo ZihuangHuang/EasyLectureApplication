@@ -2,6 +2,7 @@ package factory;
 
 import data_access.transcript.TranscriptDAO;
 import interface_adapter.transcript.TranscriptPresenter;
+import interface_adapter.transcript.TranscriptViewModel;
 import use_case.transcript.*;
 import view.transcript.TranscriptView;
 
@@ -17,11 +18,14 @@ public class TranscriptUseCaseFactory {
      * @return Configured TranscriptInputBoundary
      */
     public static TranscriptInputBoundary createTranscriptUseCase(TranscriptView view) {
+        // Create the ViewModel
+        TranscriptViewModel viewModel = new TranscriptViewModel();
+
         // Create the DAO with API key
         TranscriptDataUserAccessInterface transcriptDAO = new TranscriptDAO(API_KEY);
 
-        // Create the presenter
-        TranscriptOutputBoundary presenter = new TranscriptPresenter(view);
+        // Create the presenter with the ViewModel
+        TranscriptOutputBoundary presenter = new TranscriptPresenter(viewModel);
 
         // Create and return the interactor with all its dependencies
         return new TranscriptInteractor(transcriptDAO, presenter);
