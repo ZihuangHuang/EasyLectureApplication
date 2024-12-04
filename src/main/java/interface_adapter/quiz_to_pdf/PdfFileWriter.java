@@ -1,8 +1,9 @@
 package interface_adapter.quiz_to_pdf;
 
 import com.itextpdf.text.DocumentException;
-import entity.JsonDataAccess;
+import entity.JsonQuizFile;
 import use_case.quiz_to_pdf.PdfGenerator;
+import use_case.summary_to_quiz.SummaryToQuizOutputData;
 
 import java.io.IOException;
 
@@ -15,9 +16,9 @@ public class PdfFileWriter {
     }
 
     public void writePdf(String jsonFilePath, String outputPdfPath) throws IOException, DocumentException {
-        JsonFileReader reader = new JsonFileReader();
-        JsonDataAccess jsonData = reader.readJsonFromFile(jsonFilePath);
-        converter.execute(jsonData, outputPdfPath);
+        PdfController reader = new PdfController();
+        JsonQuizFile jsonData = reader.readJsonFromFile(jsonFilePath);
+        PdfGenerator.execute();
     }
 }
 

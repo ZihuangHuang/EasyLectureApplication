@@ -1,6 +1,6 @@
 package use_case.pdfgenerator;
 
-import app.JsonToPdfService;
+import app.quiz_to_pdf;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -17,7 +17,7 @@ public class PdfGeneratorTest {
         createTestJsonFile(testJsonFilePath);
 
         // Initialize the service
-        JsonToPdfService service = new JsonToPdfService();
+        quiz_to_pdf service = new quiz_to_pdf();
 
         // Run the PDF generation test
         System.out.println("Running PDF Generation Test...");

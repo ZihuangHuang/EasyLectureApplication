@@ -3,6 +3,7 @@ package view.quiz;
 import interface_adapter.summary_to_quiz.SummaryToQuizController;
 import interface_adapter.summary_to_quiz.SummaryToQuizViewModel;
 import use_case.summary_to_quiz.SummaryToQuiz;
+import use_case.quiz_to_pdf.PdfGenerator;
 
 import javax.swing.*;
 
@@ -42,5 +43,8 @@ public class SummaryToQuizView extends JPanel {
     private void generateQuiz() {
         SummaryToQuiz quiz = new SummaryToQuiz();
         // How to formalize this view?
+    }
+    private void generatePdf() {
+        PdfGenerator pdf = new PdfGenerator();
     }
 }

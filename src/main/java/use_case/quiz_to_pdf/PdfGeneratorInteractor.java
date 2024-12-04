@@ -4,8 +4,8 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
-import entity.JsonDataAccess;
-import interface_adapter.quiz_to_pdf.JsonFileReader;
+import entity.JsonQuizFile;
+import interface_adapter.quiz_to_pdf.PdfController;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -27,8 +27,8 @@ public class PdfGeneratorInteractor implements PdfGeneratorInputBoundary {
 
         try {
             // Step 1: Read JSON data
-            JsonFileReader reader = new JsonFileReader();
-            JsonDataAccess jsonData = reader.readJsonFromFile(jsonFilePath);
+            PdfController reader = new PdfController();
+            JsonQuizFile jsonData = reader.readJsonFromFile(jsonFilePath);
 
             // Step 2: Generate PDF
             OutputStream outputStream = Files.newOutputStream(Paths.get(outputPdfPath));
