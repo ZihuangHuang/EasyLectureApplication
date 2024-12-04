@@ -6,9 +6,9 @@ public class PdfGeneratorPresentor implements use_case.quiz_to_pdf.PdfGeneratorO
     @Override
     public void present(PdfGeneratorOutputData outputData) {
         if (outputData.isSuccess()) {
-            System.out.println("SUCCESS: " + outputData.getMessage());
+            System.out.println("PDF CREATED: " + outputData.getMessage());
         } else {
-            System.out.println("ERROR: " + outputData.getMessage());
+            System.out.println("CANNOT CREATE PDF: " + outputData.getMessage());
         }
     }
 }

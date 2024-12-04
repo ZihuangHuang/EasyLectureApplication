@@ -6,10 +6,10 @@ import use_case.quiz_to_pdf.PdfGenerator;
 
 import java.io.IOException;
 
-public class JsonToPdfService {
+public class quiz_to_pdf {
     private final PdfFileWriter pdfWriter;
 
-    public JsonToPdfService() {
+    public quiz_to_pdf() {
         PdfGenerator converter = new use_case.quiz_to_pdf.PdfGenerator();
         this.pdfWriter = new PdfFileWriter(converter);
     }
