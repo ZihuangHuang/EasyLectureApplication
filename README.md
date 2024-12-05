@@ -15,7 +15,7 @@ This EasyLectureApp is a Java-based application designed to help students and ed
 
 - __Nguyen Nam Anh Tran__
   
-   3. 📃User Story: I enjoy studying with others, but a lot of the times, I'd like to share what I've learnt with my peerse. Therefore, I'd like to have a program that can generate a PDF file that contains questions which I've got online. 
+   3. 📃User Story: I enjoy studying with others, but a lot of the times, I'd like to share what I've learnt with my peers. Therefore, I'd like to have a program that can generate a PDF file that contains questions which I've got online. 
 
 - __Eric Zhang__
   
@@ -176,4 +176,4 @@ Review Process:
 - Approved contributions will be merged into the main branch.
 ***
 ## Again, contributions Are Welcome!
-If you have any questions about contributing, feel free to open an issue or contact us at zihuang.huang@mail.com !
+If you have any questions about contributing, feel free to open an issue or contact us at zihuang.huang@gmail.com !
